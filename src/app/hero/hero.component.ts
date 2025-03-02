@@ -1,11 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
-  imports: [],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })
 export class HeroComponent {
-  hero = "hero-component"
+ 
+  userInput ="ddddd";
+  Islogged =false;
+  fruits = [{id :0,name:'Apple'},{id:1,name:'Banana'} , {id:2,name:'Orange'}];
+  animals = ['dog','cat','elephant','lion'];
+  imageURL ='https://www.gstatic.com/webp/gallery3/1.png';
+
+  greet(){
+    this.userInput="button clicked";
+  }
+  onMouseOver(){
+    this.Islogged =true;
+  }
+  
 }
+

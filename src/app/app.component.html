@@ -1,2 +1,6 @@
 <h1>{{title}}</h1>
+<app-DialogContentExampleDialogComponent [dummyname]="count"
+[showCounter]="false"></app-DialogContentExampleDialogComponent>
 <app-hero></app-hero>
+<app-user (incrementCountEvent)="addItem($event)"  occupation="Angular Developer" ></app-user>
+<p>{{count}} in parent</p>

@@ -1,0 +1,7 @@
+:host{
+    /*this applies to entire component*/
+    display: block;
+    background: rgb(207, 188, 151);
+    color: blue;
+}
+/* use host-context to apply styles to parent component specific one*/
